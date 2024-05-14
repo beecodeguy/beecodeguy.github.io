@@ -3,9 +3,11 @@ import "./Contact.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import {illustration, contactInfo} from "../../portfolio";
 import {Fade} from "react-reveal";
-import email from "../../assets/lottie/email";
+import contactMeAnim from "../../assets/lottie/contact_me_anim.json";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
+import { FaWhatsapp } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 export default function Contact() {
   const {isDark} = useContext(StyleContext);
@@ -35,7 +37,7 @@ export default function Contact() {
                     className="contact-detail"
                     href={"tel:" + contactInfo.number}
                   >
-                    {contactInfo.number}
+                    {contactInfo.number} {<FaWhatsapp size={24} />}
                   </a>
                   <br />
                   <br />
@@ -45,7 +47,7 @@ export default function Contact() {
                 className="contact-detail-email"
                 href={"mailto:" + contactInfo.email_address}
               >
-                {contactInfo.email_address}
+                {contactInfo.email_address} { <MdEmail size={24} /> }
               </a>
               <br />
               <br />
@@ -54,7 +56,7 @@ export default function Contact() {
           </div>
           <div className="contact-image-div">
             {illustration.animated ? (
-              <DisplayLottie animationData={email} />
+              <DisplayLottie animationData={contactMeAnim} style={{height: '400px'}} />
             ) : (
               <img
                 alt="Man working"
