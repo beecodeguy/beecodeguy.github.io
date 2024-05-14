@@ -3,7 +3,8 @@ import "./Skills.scss";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import {illustration, skillsSection} from "../../portfolio";
 import {Fade} from "react-reveal";
-import codingPerson from "../../assets/lottie/codingPerson";
+import skillAnim from "../../assets/lottie/skill_anim.json";
+import skillTwoAnim from "../../assets/lottie/skill_2_anim.json";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
 
@@ -15,18 +16,38 @@ export default function Skills() {
   return (
     <div className={isDark ? "dark-mode main" : "main"} id="skills">
       <div className="skills-main-div">
-        <Fade left duration={1000}>
-          <div className="skills-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={codingPerson} />
-            ) : (
-              <img
-                alt="Man Working"
-                src={require("../../assets/images/developerActivity.svg")}
-              ></img>
-            )}
-          </div>
-        </Fade>
+        <div className="flex-column">
+          <Fade left duration={1000}>
+            <div className="skills-image-div">
+              {illustration.animated ? (
+                <DisplayLottie
+                  animationData={skillAnim}
+                  style={{height: "600px"}}
+                />
+              ) : (
+                <img
+                  alt="Man Working"
+                  src={require("../../assets/images/developerActivity.svg")}
+                ></img>
+              )}
+            </div>
+          </Fade>
+          <Fade left duration={1000}>
+            <div className="skills-image-div">
+              {illustration.animated ? (
+                <DisplayLottie
+                  animationData={skillTwoAnim}
+                  style={{height: "600px"}}
+                />
+              ) : (
+                <img
+                  alt="Man Working"
+                  src={require("../../assets/images/developerActivity.svg")}
+                ></img>
+              )}
+            </div>
+          </Fade>
+        </div>
         <Fade right duration={1000}>
           <div className="skills-text-div">
             <h1

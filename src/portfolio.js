@@ -53,12 +53,20 @@ const skillsSection = {
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Craft exceptional user experiences (UX) and visually stunning user interfaces (UI) for web and mobile applications."
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ Optimize frontend performance through code-splitting, lazy loading, and efficient caching strategies for faster load times and smoother user interactions"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+      "⚡ Utilize state management libraries like Redux or MobX to manage complex application states and improve scalability and maintainability of frontend codebases."
+    ),
+    emoji(   "⚡ Develop responsive layouts and UI components using modern CSS frameworks like Bootstrap, Tailwind CSS, or Material-UI to ensure seamless user experiences across devices and screen sizes. "),
+    emoji(   "⚡ Implement real-time updates and notifications using WebSockets or server-sent events to keep users informed of important changes without constant page refreshes "),
+    emoji(   "⚡  Implement authentication and authorization mechanisms using JWT tokens or OAuth protocols to secure frontend applications and protect sensitive user data "),
+    emoji(   "⚡ Stay updated with the latest frontend technologies and best practices, continuously learning and experimenting with new tools and frameworks to improve development workflows and deliver cutting-edge solutions. "),
+    emoji(   "⚡ Integrate third-party services like Firebase, AWS, or DigitalOcean for functionalities beyond core application logic (e.g., authentication, storage, analytics). "),
+    emoji(   "⚡ Version control systems "),
+    emoji(   "⚡ Integration of Payment System like Stripe, (or Nepal Payment system as Esewa, Khalti, connectIPS, more) "),
+    emoji(   "⚡ Building SaaS, Server Side Website, SEO, Digital Marketing Stratigies and much more "),
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
