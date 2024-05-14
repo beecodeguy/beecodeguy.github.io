@@ -3,6 +3,19 @@ import "./SocialMedia.scss";
 import {socialMediaLinks} from "../../portfolio";
 
 export default function socialMedia() {
+
+  const IconVariants = {
+    github: '',
+    linkedin: '',
+    mail: '',
+    facebook: '',
+    medium: '',
+    discord: '',
+    instagram: '',
+    twitter: '',
+    stackoverflow: '',
+  }
+
   if (!socialMediaLinks.display) {
     return null;
   }

@@ -62,9 +62,8 @@ const Main = () => {
             <Blogs />
             <Talks />
             <Twitter />
-            <Podcast />
+            {/* <Podcast /> */}
             <Profile />
-            <Footer />
             <ScrollToTopButton />
           </>
         )}
