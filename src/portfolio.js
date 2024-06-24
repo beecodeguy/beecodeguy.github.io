@@ -27,7 +27,7 @@ const greeting = {
   ),
   resumeLink:
     // "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing",
-    "https://drive.google.com/file/d/1W5Z5DivCzF3s3NblEHuTfWzpBzGvOoUM/view?usp=drive_link", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1FPBiip-LYIssDUs7OlljpU-11BmlsWed/view?usp=drive_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -143,11 +143,8 @@ const educationInfo = {
       logo: require("./assets/images/sharda_university.png"),
       subHeader: "Bachelor of Mechanical Engineering",
       duration: "August 2013 - June 2017",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      desc: "Graduated as Mechanical Engineer with roficient in object-oriented programming, C#, and Python, with a solid foundation in CAD modeling and finite element analysis. Combined mechanical engineering principles with computational methods, enhancing problem-solving and project management skills in team environments.",
+      descBullets: []
     },
     // {
     //   schoolName: "Stanford University",
@@ -166,17 +163,25 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "NextJS/ReactJs", //Insert stack or technology you have experience in
+      progressPercentage: "95%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
+      Stack: "Typescript", //Insert stack or technology you have experience in
+      progressPercentage: "80%" //Insert relative proficiency in percentage
+    },
+    {
+      Stack: "Design/Responsivenes", //Insert stack or technology you have experience in
+      progressPercentage: "80%" //Insert relative proficiency in percentage
+    },
+    {
+      Stack: "NodeJs", //Insert stack or technology you have experience in
+      progressPercentage: "70%" //Insert relative proficiency in percentage
+    },
+    {
+      Stack: "External Packages(Firebase/MongoDb..)",
       progressPercentage: "70%"
     },
-    {
-      Stack: "Programming",
-      progressPercentage: "80%"
-    }
   ],
   displayCodersrank: true // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
@@ -187,29 +192,50 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Frontend Engineer",
+      role: "Lead Developer(Javascript)",
       company: "Sharebigya",
       companylogo: require("./assets/images/sharebigya.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      date: "April 2023 – Present",
+      desc: "Driving innovation in the world of stock market-related analytics through our cutting-edge SaaS solutions. In my role as a Lead Developer, I have played a pivotal part in shaping the frontend architecture and user experience of our revolutionary platform.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Frontend Architecture with NextJs-14/Tailwindcss/Storybook/Eslint",
+        "Closely worked with Designer to ensure seamless UI/UX",
+        "Reviewing the Junior Devs tasks, assigining tasks and overseeing overall project status to meet the deadline",
+        "Enterprise Level Portfolio Management System as per roles to different Users within the Organization",
+        "Complex and Dynamic Charts using (PLOTLYJS/React APEX CHARTS)",
+        "Integration of Trading View Library and it's charts with Save Feature and Custom Buttons",
+        "Ensuring proper data structure and closely working with backend devs for backend structure"
       ]
     },
     {
-      role: "Front-End Developer",
+      role: "Senior Frontend Dev",
       company: "Vinhood",
       companylogo: require("./assets/images/VINHOOD_LOGO.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      date: "Feb 2023 – Present",
+      desc: "Creating a new way of communication between consumers and producers/distributors of products with the Taste Ecosystem. In my role as Senior Dev, I create optimized codebase with shareable components and getting aligned with Designs by meeting the deadline for each release",
+      descBullets: [
+        'Worked on Retailer Based Authentication and Theming according to Retailer Colors',
+        "Converted React Components to Styled React Components",
+        "Created Client side PDF generation",
+        "Created Inhouse Design System with close collaboration with Designer and building optimized React Components (shareable across different env)",
+        "Authentication module, Retailer module, and Dynamic Test cases modules as per different env",
+        "Worked on ReduxJs (using redux toolkit and slices), ReactPDF, QRCode Generator (& Scanner) within App"
+      ]
     },
     {
-      role: "Frontend Developer",
-      company: "Kotuko",
+      role: "Freelance (Mentorship)",
+      company: "Freelance",
       companylogo: require("./assets/images/kotuko.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      date: "Feb 2022 - Present",
+      desc: "Experienced in working on a contract basis, specializing in minor fixes, mentorship, and advanced front-end development using Next.js 14 and TypeScript. Skilled in delivering high-quality, efficient solutions and guiding clients through best practices in modern web development.",
+      descBullets: [
+        "Working on Different NPM Packages to help other devs",
+        'Completely converted bootstrap to styled components',
+        "Refactored Data fetching logic using proper state management and React Query",
+        "Deploying NextJS-14 with Cpanel",
+        "Created E-commerce and Travel Platform with CMS with complete control over Client Side",
+        "Worked with html CANVA to create canva like Desigining approach to help client create their own template to show on Digital Board"
+      ]
     }
   ]
 };
