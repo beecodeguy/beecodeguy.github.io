@@ -12,6 +12,7 @@
 }
 .repo-card-div:hover {
   box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+  -webkit-transition: all 0.3s ease;
 }
 
 .repo-stats {
@@ -78,8 +79,11 @@
 }
 
 .dark-card-mode {
-  background-color: $darkBackground;
+  background-color: $githubCardBorderDark;
   color: $textColorDark;
+  box-shadow: 0px 0px 4px $darkBoxShadow;
+  border-radius: 4px;
+
 }
 .dark-card-mode p {
   color: $textColorDark;
