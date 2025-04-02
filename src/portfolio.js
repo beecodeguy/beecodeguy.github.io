@@ -55,18 +55,34 @@ const skillsSection = {
     emoji(
       "⚡ Craft exceptional user experiences (UX) and visually stunning user interfaces (UI) for web and mobile applications."
     ),
-    emoji("⚡ Optimize frontend performance through code-splitting, lazy loading, and efficient caching strategies for faster load times and smoother user interactions"),
+    emoji(
+      "⚡ Optimize frontend performance through code-splitting, lazy loading, and efficient caching strategies for faster load times and smoother user interactions"
+    ),
     emoji(
       "⚡ Utilize state management libraries like Redux or MobX to manage complex application states and improve scalability and maintainability of frontend codebases."
     ),
-    emoji(   "⚡ Develop responsive layouts and UI components using modern CSS frameworks like Bootstrap, Tailwind CSS, or Material-UI to ensure seamless user experiences across devices and screen sizes. "),
-    emoji(   "⚡ Implement real-time updates and notifications using WebSockets or server-sent events to keep users informed of important changes without constant page refreshes "),
-    emoji(   "⚡  Implement authentication and authorization mechanisms using JWT tokens or OAuth protocols to secure frontend applications and protect sensitive user data "),
-    emoji(   "⚡ Stay updated with the latest frontend technologies and best practices, continuously learning and experimenting with new tools and frameworks to improve development workflows and deliver cutting-edge solutions. "),
-    emoji(   "⚡ Integrate third-party services like Firebase, AWS, or DigitalOcean for functionalities beyond core application logic (e.g., authentication, storage, analytics). "),
-    emoji(   "⚡ Version control systems "),
-    emoji(   "⚡ Integration of Payment System like Stripe, (or Nepal Payment system as Esewa, Khalti, connectIPS, more) "),
-    emoji(   "⚡ Building SaaS, Server Side Website, SEO, Digital Marketing Stratigies and much more "),
+    emoji(
+      "⚡ Develop responsive layouts and UI components using modern CSS frameworks like Bootstrap, Tailwind CSS, or Material-UI to ensure seamless user experiences across devices and screen sizes. "
+    ),
+    emoji(
+      "⚡ Implement real-time updates and notifications using WebSockets or server-sent events to keep users informed of important changes without constant page refreshes "
+    ),
+    emoji(
+      "⚡  Implement authentication and authorization mechanisms using JWT tokens or OAuth protocols to secure frontend applications and protect sensitive user data "
+    ),
+    emoji(
+      "⚡ Stay updated with the latest frontend technologies and best practices, continuously learning and experimenting with new tools and frameworks to improve development workflows and deliver cutting-edge solutions. "
+    ),
+    emoji(
+      "⚡ Integrate third-party services like Firebase, AWS, or DigitalOcean for functionalities beyond core application logic (e.g., authentication, storage, analytics). "
+    ),
+    emoji("⚡ Version control systems "),
+    emoji(
+      "⚡ Integration of Payment System like Stripe, (or Nepal Payment system as Esewa, Khalti, connectIPS, more) "
+    ),
+    emoji(
+      "⚡ Building SaaS, Server Side Website, SEO, Digital Marketing Stratigies and much more "
+    )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -145,7 +161,7 @@ const educationInfo = {
       duration: "August 2013 - June 2017",
       desc: "Graduated as Mechanical Engineer with roficient in object-oriented programming, C#, and Python, with a solid foundation in CAD modeling and finite element analysis. Combined mechanical engineering principles with computational methods, enhancing problem-solving and project management skills in team environments.",
       descBullets: []
-    },
+    }
     // {
     //   schoolName: "Stanford University",
     //   logo: require("./assets/images/stanfordLogo.png"),
@@ -181,7 +197,7 @@ const techStack = {
     {
       Stack: "External Packages(Firebase/MongoDb..)",
       progressPercentage: "70%"
-    },
+    }
   ],
   displayCodersrank: true // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
@@ -214,7 +230,7 @@ const workExperiences = {
       date: "Feb 2023 – Present",
       desc: "Creating a new way of communication between consumers and producers/distributors of products with the Taste Ecosystem. In my role as Senior Dev, I create optimized codebase with shareable components and getting aligned with Designs by meeting the deadline for each release",
       descBullets: [
-        'Worked on Retailer Based Authentication and Theming according to Retailer Colors',
+        "Worked on Retailer Based Authentication and Theming according to Retailer Colors",
         "Converted React Components to Styled React Components",
         "Created Client side PDF generation",
         "Created Inhouse Design System with close collaboration with Designer and building optimized React Components (shareable across different env)",
@@ -230,7 +246,7 @@ const workExperiences = {
       desc: "Experienced in working on a contract basis, specializing in minor fixes, mentorship, and advanced front-end development using Next.js 14 and TypeScript. Skilled in delivering high-quality, efficient solutions and guiding clients through best practices in modern web development.",
       descBullets: [
         "Working on Different NPM Packages to help other devs",
-        'Completely converted bootstrap to styled components',
+        "Completely converted bootstrap to styled components",
         "Refactored Data fetching logic using proper state management and React Query",
         "Deploying NextJS-14 with Cpanel",
         "Created E-commerce and Travel Platform with CMS with complete control over Client Side",
@@ -252,12 +268,12 @@ const openSource = {
 
 const bigProjects = {
   title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  subtitle: "SOME COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
       image: require("./assets/images/sharebigya.png"),
       projectName: "Sharebigya",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectDesc: `ShareBigya.com is Nepal's top source for stock market knowledge, offering in-depth analysis and user-friendly visualization tools for reliable market research. Whether you're an experienced investor or a beginner, our platform provides diverse features to enhance decision-making. Making informed choices is vital for financial success, and ShareBigya is committed to assisting you.`,
       footerLink: [
         {
           name: "Visit Website",
@@ -267,13 +283,14 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/property_png.jpg"),
+      projectName: "Property Wizard",
+      projectDesc:
+        "Property Wizard Limited is one of the newest yet most trustworthy Brokerage Firms for stock trading in Nepal. The company received the license from the market regulator, the Securities Board of Nepal (SEBON), and is a member of Nepal Stock Exchange Ltd. (NEPSE).",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "https://propertywizardlimited.com/"
         }
       ]
     }
@@ -350,6 +367,12 @@ const blogSection = {
     "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
+    {
+      url: "https://medium.com/@beecodeguy/debugging-the-next-js-errors-auth-js-bd24c58d35f7",
+      title: "Debugging the NEXT.JS Errors: AUTH JS:",
+      description:
+        "Looking for simpler and small handy package to secure your app with OTP entry. Here is how optimized OTP for your React Application."
+    },
     {
       url: "https://medium.com/@beecodeguy/simplifying-otp-entry-with-simple-react-package-beecode-otp-ui-5c65fba46008",
       title: "Simplify OTP Entry with Simple React Package",

@@ -20,6 +20,16 @@ export default function Blogs() {
           .join(" ")
       : NaN;
   }
+
+  // useEffect(() => {
+  //   const fetchMediumBlogs = async () => {
+  //     const mediumRss = await fetch("https://medium.com/feed/@beecodeguy");
+  //     console.log(mediumRss);
+  //   };
+
+  //   fetchMediumBlogs();
+  // }, []);
+
   useEffect(() => {
     if (blogSection.displayMediumBlogs === "true") {
       const getProfileData = () => {
