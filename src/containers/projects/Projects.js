@@ -52,7 +52,7 @@ export default function Projects() {
     return (
       <Suspense fallback={renderLoader()}>
         <div className="main" id="opensource">
-          <h1 className="project-title">Open Source Projects</h1>
+          <h1 className="project-title">Github Projects(Public)</h1>
           {repo.length > 0 && (
             <div className="repo-cards-div-main">
               {getRandomItems(repo)?.map((v, i) => {
