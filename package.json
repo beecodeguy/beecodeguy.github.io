@@ -24,10 +24,10 @@
     "tailwindcss": "^4.1.1"
   },
   "scripts": {
-    "predeploy": "yarn run build",
     "dev": "vite",
     "build": "node fetch.js && tsc && vite build",
-    "deploy": "gh-pages -d build",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write \"./**/*.{js,css,json,scss}\"",
