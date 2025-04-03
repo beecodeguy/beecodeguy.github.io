@@ -26,13 +26,13 @@ jobs:
         with:
           node-version: ^20.17.0
 
-      - name: Update npm 🚀
-        run: npm install -g npm@latest
+      - name: Install Yearn 🚀
+        run: npm install -g yarn
 
       - name: Install and Build 🔧 # Build the Project
         run: |
-          npm install --force
-          npm run build
+          yarn install --force
+          yarn build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
