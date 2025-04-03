@@ -59,14 +59,14 @@ const Main = () => {
             <Education />
             <WorkExperience />
             <Projects />
-            {/* <StartupProject /> */}
+            <StartupProject />
             {/* <Achievement /> */}
-            {/* <Blogs /> */}
+            <Blogs />
             {/* <Talks /> */}
             {/* <Twitter /> */}
             {/* <Podcast /> */}
             <ScrollToTopButton />
-            {/* <Footer /> */}
+            <Footer />
           </>
         )}
       </StyleProvider>
