@@ -8,7 +8,8 @@ import {
   Layout,
   Globe,
   MessageSquare,
-  MapIcon as WhatsappIcon
+  MapIcon as WhatsappIcon,
+  Aperture
 } from "lucide-react";
 
 interface ProjectCard {
@@ -24,57 +25,58 @@ const projects: ProjectCard[] = [
   {
     title: "Modern Gym Template",
     description:
-      "Sleek, responsive gym website with membership management and class scheduling.",
-    demoUrl: "https://demo-gym-template.netlify.app",
-    image:
-      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=1200",
+      "Sleek, responsive gym website with details showing Pricing plans, timings, coaches and available exercises for each day.",
+    demoUrl: "https://gym-site-delta.vercel.app/",
+    image: "/assets/sites/gym_site.png",
     icon: <Dumbbell className="w-5 h-5" />,
     features: [
-      "Class Scheduling",
-      "Membership Portal",
+      "Available Offers",
+      "Available Classes",
       "Trainer Profiles",
-      "Online Payments"
+      "Pricing Plans"
     ]
   },
   {
-    title: "Developer Portfolio",
+    title: "Photographer Portfolio",
     description:
-      "Minimalist portfolio template for developers to showcase their work effectively.",
-    demoUrl: "https://demo-portfolio-template.netlify.app",
-    image:
-      "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&q=80&w=1200",
-    icon: <Code2 className="w-5 h-5" />,
+      "Modern Elegant photographer portfolio template for developers to showcase their work effectively.",
+    demoUrl: "https://photography-portfolio-lovat-theta.vercel.app/",
+    image: "/assets/sites/photographer.png",
+    icon: <Aperture className="w-5 h-5" />,
     features: [
       "Project Showcase",
       "Skills Section",
       "Dark Mode",
-      "Blog Integration"
+      "Travel Diaries"
     ]
   },
   {
-    title: "CMS Dashboard",
+    title: "Studio Sites",
     description:
-      "Modern CMS template with intuitive content management and analytics.",
-    demoUrl: "https://demo-cms-template.netlify.app",
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200",
+      "Modern studio template for Photo Studios to showcase their work, services and pricing.",
+    demoUrl: "https://studio-landing-template.vercel.app/",
+    image: "/assets/sites/studio_site.png",
     icon: <Layout className="w-5 h-5" />,
     features: [
-      "Content Management",
-      "User Dashboard",
-      "Media Library",
-      "Analytics"
+      "Available Services",
+      "Available Appointments",
+      "Available Gadgets",
+      "Pricing Plans"
     ]
   },
   {
-    title: "SEO Business",
+    title: "SEO Optimized Dynamic Sites",
     description:
-      "High-performance business template optimized for search engines.",
-    demoUrl: "https://demo-seo-template.netlify.app",
-    image:
-      "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?auto=format&fit=crop&q=80&w=1200",
+      "High-performance business template optimized for search engines with dynamic content management.",
+    demoUrl: "#",
+    image: "/assets/sites/site_build.png",
     icon: <Globe className="w-5 h-5" />,
-    features: ["SEO Optimized", "Fast Loading", "Mobile-First", "Analytics"]
+    features: [
+      "SEO Optimized",
+      "Fast Loading",
+      "Mobile-First",
+      "Content Management"
+    ]
   }
 ];
 
@@ -108,7 +110,7 @@ export default function AvailableProjects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className={`rounded-xl overflow-hidden transition-transform hover:scale-[1.02]`}
+              className={`rounded-md shadow border border-gray-400 overflow-hidden transition-transform hover:scale-[1.02] group`}
             >
               <div className="relative h-48 overflow-hidden">
                 <img
@@ -128,7 +130,7 @@ export default function AvailableProjects() {
                     href={project.demoUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1 text-sm text-white hover:text-blue-400 transition-colors"
+                    className="flex items-center gap-1 text-sm font-semibold text-white group-hover:text-green-500 hover:text-blue-400 transition-colors"
                   >
                     Live Demo <ExternalLink className="w-4 h-4" />
                   </a>
@@ -151,7 +153,7 @@ export default function AvailableProjects() {
                   href={getWhatsAppLink(project.title)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm text-green-500 hover:text-green-400 transition-colors"
+                  className="inline-flex items-center gap-2 text-sm !text-green-500 hover:text-green-400 transition-colors"
                 >
                   <WhatsappIcon className="w-4 h-4" />
                   Inquire via WhatsApp

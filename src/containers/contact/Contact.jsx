@@ -16,7 +16,9 @@ export default function Contact() {
       <div className="main contact-margin-top" id="contact">
         <div className="contact-div-main">
           <div className="contact-header">
-            <h1 className="heading contact-title">{contactInfo.title}</h1>
+            <h1 className="heading contact-title flex items-center">
+              {contactInfo.title}
+            </h1>
             <p
               className={
                 isDark
@@ -34,20 +36,20 @@ export default function Contact() {
               {contactInfo.number && (
                 <>
                   <a
-                    className="contact-detail"
+                    className="contact-detail flex items-center gap-2 text-green-500 hover:text-green-500"
                     href={"tel:" + contactInfo.number}
                   >
-                    {contactInfo.number} {<FaWhatsapp size={24} />}
+                    {contactInfo.number} {<FaWhatsapp size={36} />}
                   </a>
                   <br />
                   <br />
                 </>
               )}
               <a
-                className="contact-detail-email"
+                className="contact-detail-email flex items-center gap-2 text-orange-500"
                 href={"mailto:" + contactInfo.email_address}
               >
-                {contactInfo.email_address} {<MdEmail size={24} />}
+                {contactInfo.email_address} {<MdEmail size={36} />}
               </a>
               <br />
               <br />

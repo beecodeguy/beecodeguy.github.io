@@ -9,7 +9,11 @@ export default function Footer() {
   return (
     <Fade bottom duration={1000} distance="5px">
       <div className="footer-div">
-        <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
+        <p
+          className={
+            "dark-mode footer-text flex justify-center items-center gap-1"
+          }
+        >
           {emoji("Made with ❤️ by Beecodeguy")}
         </p>
         {/* <p className={isDark ? "dark-mode footer-text" : "footer-text"}>

@@ -3,7 +3,9 @@
   "name": "Beecodeguy",
   "version": "0.1.1",
   "private": true,
+  "type": "module",
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.1",
     "@types/react": "18",
     "@types/react-dom": "18",
     "colorthief": "^2.3.0",
@@ -21,7 +23,8 @@
     "react-reveal": "^1.2.2",
     "react-test-renderer": "^16.10.2",
     "react-twitter-embed": "^4.0.4",
-    "sass": "^1.32.8"
+    "sass": "^1.32.8",
+    "tailwindcss": "^4.1.1"
   },
   "scripts": {
     "predeploy": "yarn run build",
