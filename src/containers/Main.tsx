@@ -52,7 +52,7 @@ const Main = () => {
           <>
             <Header />
             <Profile />
-            {/* <Greeting /> */}
+            <Greeting />
             {/* <AvailableProjects /> */}
             {/* <Skills /> */}
             {/* <StackProgress /> */}
