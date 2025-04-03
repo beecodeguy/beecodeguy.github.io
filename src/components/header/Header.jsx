@@ -79,12 +79,11 @@ function Header() {
           <li>
             <a href="#contact">Contact Me</a>
           </li>
-          <li>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+          {/* <li>
             <a>
               <ToggleSwitch />
             </a>
-          </li>
+          </li> */}
         </ul>
       </header>
     </Headroom>

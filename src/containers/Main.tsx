@@ -51,22 +51,22 @@ const Main = () => {
         ) : (
           <>
             <Header />
-            <Profile />
-            <Greeting />
-            <AvailableProjects />
-            <Skills />
-            <StackProgress />
-            <Education />
-            <WorkExperience />
-            <Projects />
-            <StartupProject />
+            {/* <Profile />s */}
+            {/* <Greeting /> */}
+            {/* <AvailableProjects /> */}
+            {/* <Skills /> */}
+            {/* <StackProgress /> */}
+            {/* <Education /> */}
+            {/* <WorkExperience /> */}
+            {/* <Projects /> */}
+            {/* <StartupProject /> */}
             {/* <Achievement /> */}
-            <Blogs />
+            {/* <Blogs /> */}
             {/* <Talks /> */}
-            <Twitter />
+            {/* <Twitter /> */}
             {/* <Podcast /> */}
             <ScrollToTopButton />
-            <Footer />
+            {/* <Footer /> */}
           </>
         )}
       </StyleProvider>
