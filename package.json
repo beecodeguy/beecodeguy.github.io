@@ -28,6 +28,7 @@
     "build": "node fetch.js && tsc && vite build",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d dist",
+    "preview": "vite preview",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write \"./**/*.{js,css,json,scss}\"",
