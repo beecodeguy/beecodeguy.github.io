@@ -7,5 +7,5 @@ export default defineConfig({
   //   build: {
   //     outDir: "build"
   //   }
-  base: "/beecodeguy.github.io"
+  base: "/"
 });
