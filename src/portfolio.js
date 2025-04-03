@@ -3,7 +3,7 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import splashAnimation from "../public/assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 
 // Splash Screen
 
@@ -156,7 +156,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Sharda University",
-      logo: require("./assets/images/sharda_university.png"),
+      logo: "./assets/images/sharda_university.png",
       subHeader: "Bachelor of Mechanical Engineering",
       duration: "August 2013 - June 2017",
       desc: "Graduated as Mechanical Engineer with roficient in object-oriented programming, C#, and Python, with a solid foundation in CAD modeling and finite element analysis. Combined mechanical engineering principles with computational methods, enhancing problem-solving and project management skills in team environments.",
@@ -210,7 +210,7 @@ const workExperiences = {
     {
       role: "Lead Developer(Javascript)",
       company: "Sharebigya",
-      companylogo: require("./assets/images/sharebigya.png"),
+      companylogo: "./assets/images/sharebigya.png",
       date: "April 2023 – Present",
       desc: "Driving innovation in the world of stock market-related analytics through our cutting-edge SaaS solutions. In my role as a Lead Developer, I have played a pivotal part in shaping the frontend architecture and user experience of our revolutionary platform.",
       descBullets: [
@@ -226,7 +226,7 @@ const workExperiences = {
     {
       role: "Senior Frontend Dev",
       company: "Vinhood",
-      companylogo: require("./assets/images/VINHOOD_LOGO.png"),
+      companylogo: "./assets/images/VINHOOD_LOGO.png",
       date: "Feb 2023 – Present",
       desc: "Creating a new way of communication between consumers and producers/distributors of products with the Taste Ecosystem. In my role as Senior Dev, I create optimized codebase with shareable components and getting aligned with Designs by meeting the deadline for each release",
       descBullets: [
@@ -241,7 +241,7 @@ const workExperiences = {
     {
       role: "Freelance (Mentorship)",
       company: "Freelance",
-      companylogo: require("./assets/images/kotuko.png"),
+      companylogo: "./assets/images/kotuko.png",
       date: "Feb 2022 - Present",
       desc: "Experienced in working on a contract basis, specializing in minor fixes, mentorship, and advanced front-end development using Next.js 14 and TypeScript. Skilled in delivering high-quality, efficient solutions and guiding clients through best practices in modern web development.",
       descBullets: [
@@ -271,7 +271,7 @@ const bigProjects = {
   subtitle: "SOME COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/sharebigya.png"),
+      image: "/assets/images/sharebigya.png",
       projectName: "Sharebigya",
       projectDesc: `ShareBigya.com is Nepal's top source for stock market knowledge, offering in-depth analysis and user-friendly visualization tools for reliable market research. Whether you're an experienced investor or a beginner, our platform provides diverse features to enhance decision-making. Making informed choices is vital for financial success, and ShareBigya is committed to assisting you.`,
       footerLink: [
@@ -283,7 +283,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/property_png.jpg"),
+      image: "/assets/images/property_png.jpg",
       projectName: "Property Wizard",
       projectDesc:
         "Property Wizard Limited is one of the newest yet most trustworthy Brokerage Firms for stock trading in Nepal. The company received the license from the market regulator, the Securities Board of Nepal (SEBON), and is a member of Nepal Stock Exchange Ltd. (NEPSE).",
@@ -311,7 +311,7 @@ const achievementSection = {
       title: "Google Code-In Finalist",
       subtitle:
         "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
+      image: "./assets/images/codeInLogo.webp",
       imageAlt: "Google Code-In Logo",
       footerLink: [
         {
@@ -332,7 +332,7 @@ const achievementSection = {
       title: "Google Assistant Action",
       subtitle:
         "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
+      image: "/assets/images/googleAssistantLogo.webp",
       imageAlt: "Google Assistant Action Logo",
       footerLink: [
         {
@@ -345,7 +345,7 @@ const achievementSection = {
     {
       title: "PWA Web App Developer",
       subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
+      image: "/assets/images/pwaLogo.webp",
       imageAlt: "PWA Logo",
       footerLink: [
         {name: "Certification", url: ""},

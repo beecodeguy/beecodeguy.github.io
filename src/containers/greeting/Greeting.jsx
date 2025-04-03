@@ -2,7 +2,7 @@ import React, {useContext} from "react";
 import {Fade} from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
-import siteHeaderAnim from "../../assets/lottie/site_header_anim.json";
+import siteHeaderAnim from "../../../public/assets/lottie/site_header_anim.json";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
@@ -44,7 +44,8 @@ export default function Greeting() {
                     href={greeting.resumeLink}
                     download="Resume.pdf"
                     className="download-link-button"
-                    target="_blank" rel="beecode-site noreferrer"
+                    target="_blank"
+                    rel="beecode-site noreferrer"
                   >
                     <Button text="Download my resume" />
                   </a>
@@ -54,7 +55,10 @@ export default function Greeting() {
           </div>
           <div className="greeting-image-div">
             {illustration.animated ? (
-              <DisplayLottie animationData={siteHeaderAnim} style={{height: '600px'}}  />
+              <DisplayLottie
+                animationData={siteHeaderAnim}
+                style={{height: "600px"}}
+              />
             ) : (
               <img
                 alt="man sitting on table"

@@ -3,8 +3,8 @@ import "./Skills.scss";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import {illustration, skillsSection} from "../../portfolio";
 import {Fade} from "react-reveal";
-import skillAnim from "../../assets/lottie/skill_anim.json";
-import skillTwoAnim from "../../assets/lottie/skill_2_anim.json";
+import skillAnim from "../../../public/assets/lottie/skill_anim.json";
+import skillTwoAnim from "../../../public/assets/lottie/skill_2_anim.json";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
 

@@ -4,27 +4,29 @@
   "version": "0.1.1",
   "private": true,
   "dependencies": {
+    "@types/react": "18",
+    "@types/react-dom": "18",
     "colorthief": "^2.3.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
     "gh-pages": "^2.1.1",
     "jest-canvas-mock": "^2.3.1",
     "lottie-react": "^2.4.0",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
+    "lucide-react": "^0.487.0",
+    "react": "18",
+    "react-dom": "18",
     "react-easy-emoji": "^1.8.1",
     "react-headroom": "^3.0.0",
     "react-icons": "^5.2.1",
     "react-reveal": "^1.2.2",
-    "react-scripts": "^5.0.1",
     "react-test-renderer": "^16.10.2",
-    "react-twitter-embed": "3.0.3",
+    "react-twitter-embed": "^4.0.4",
     "sass": "^1.32.8"
   },
   "scripts": {
     "predeploy": "yarn run build",
-    "start": "node fetch.js && react-scripts start",
-    "build": "node fetch.js && react-scripts build",
+    "dev": "vite",
+    "build": "node fetch.js && tsc && vite build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -53,7 +55,12 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@vitejs/plugin-react": "^4.3.4",
     "dotenv": "^8.2.0",
-    "prettier": "^2.3.1"
+    "prettier": "^2.3.1",
+    "source-map-loader": "^5.0.0",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.4"
   }
 }
