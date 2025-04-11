@@ -79,6 +79,9 @@ function Header() {
           <li>
             <a href="#contact">Contact Me</a>
           </li>
+          <li>
+            <a href="/my-story">My Story</a>
+          </li>
           {/* <li>
             <a>
               <ToggleSwitch />
