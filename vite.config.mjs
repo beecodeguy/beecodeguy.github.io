@@ -3,10 +3,10 @@ import react from "@vitejs/plugin-react";
 import {defineConfig} from "vite";
 
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
+  plugins: [react(), tailwindcss()]
   //   build: {
   //     outDir: "build"
   //   }
   // base: "/"
-  base: "/beecodeguy.github.io/"
+  // base: "/beecodeguy.github.io/"
 });
