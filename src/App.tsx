@@ -7,7 +7,7 @@ import NavLayout from "./containers/Layouts/NavLayout";
 
 function App() {
   return (
-    <BrowserRouter basename="beecodeguy.github.io/">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<NavLayout />}>
           <Route path="/" element={<Main />} />
