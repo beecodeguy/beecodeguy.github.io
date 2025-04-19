@@ -80,7 +80,7 @@ function Header() {
             <a href="#contact">Contact Me</a>
           </li>
           <li>
-            <a href="/my-story">My Story</a>
+            <a href="https://beecodeguy.com/my-story">My Story</a>
           </li>
           {/* <li>
             <a>
